@@ -46,38 +46,55 @@
 
     <!--悬浮分页按钮-->
     <div style="position: fixed;width: 20%;margin-left: 1%;margin-top:-5%">
-      <div class="small-btn-disable" style="position:absolute;"><a class="btn-disable" role="button" href="./index.html">视频</a></div>
-      <div class="small-btn" style="position:absolute;margin-top:15%;"><a class="btn" role="button" href="./audio.html">音频</a></div>
+      <div class="small-btn" style="position:absolute;"><a class="btn" role="button" href="./video1.html">视频</a></div>
+      <div class="small-btn-disable" style="position:absolute;margin-top:15%;"><a class="btn-disable" role="button" href="./audio.html">音频</a></div>
     </div>
 
-    <!--视频盒子开始-->
-    <div style="position: absolute;width: 50%;margin-left: 8%">
-      <video autoplay loop playsinline muted style="position: relative;width: 80%;margin-left: 0%" src="./media/3D_print_22m.mp4" style="position: center;margin: 0px 10px 0px 10px;"></video>
-      <div style="position: relative;width: 100%;left: 37%;">原视频</div>
-      <div class="highlight-clean" style="padding-bottom: 10px;">
-        <p>选择语义编码码率：
-          <div class="buttons" style="position:relative; margin-bottom: 8px;margin-top: -20px;margin-left:10px;">
-            <a class="btn-disable" aria-disabled="true" role="button" href="./index.html">码率1</a>
-            <a class="btn" role="button" href="./video2.html">码率2</a>
-            <a class="btn" role="button" href="./video3.html">码率3</a>
-          </div>
-        </p>
-      </div>
-    </div>
-    <div style="position: relative;width: 50%;margin-left: 51%">
-      <video autoplay loop playsinline muted style="position: relative;width: 80%;margin-left: 0%;margin: 0px 10px 0px 10px;" src="./media/3D_print_22m.mp4"></video>
-            <div style="position: relative;width: 100%;left: 33%;">H.264编码视频</div>
-    </div>
-    <div style="position: relative;width: 50%;margin-left: 51%">
-      <video autoplay loop playsinline muted style="position: relative;width: 80%;margin-top: 2%;margin: 0px 10px 0px 10px;" src="./media/3D_print_22m.mp4"></video>
-            <div style="position: relative;width: 100%;left: 33%;">语义编码视频</div>
+    <!--音频盒子开始-->
+    <div class="ShowAudio">
+      <div class="groupname"><h3 align="left">Original</h3></div>
+      <audio preload="auto" controls="controls" src="./10/ref_Num016.wav"></audio>
+      <div style="width:10px;"></div>
+      <audio preload="auto" controls="controls" src="./10/ref_Num805.wav"></audio>
+      <div class="groupname"><h3 align="left">Original</h3></div>
+      <audio preload="auto" controls="controls" src="./30/ref_Num097.wav"></audio>
+      <div style="width:10px;"></div>
+      <audio preload="auto" controls="controls" src="./30/ref_Num734.wav"></audio>
+      <div class="groupname"><h3 align="left">Original</h3></div>
+      <audio preload="auto" controls="controls" src="./WLAN/ref_Num012.wav"></audio>
+      <div style="width:10px;"></div>
+      <audio preload="auto" controls="controls" src="./WLAN/ref_Num016.wav"></audio>
     </div>
 
+    <div class="ShowAudio">
+      <div class="groupname"><h3 align="left">Original</h3></div>
+      <audio preload="auto" controls="controls" src="./10/ref_Num016.wav"></audio>
+      <div style="width:10px;"></div>
+      <audio preload="auto" controls="controls" src="./10/ref_Num805.wav"></audio>
+      <div class="groupname"><h3 align="left">Original</h3></div>
+      <audio preload="auto" controls="controls" src="./30/ref_Num097.wav"></audio>
+      <div style="width:10px;"></div>
+      <audio preload="auto" controls="controls" src="./30/ref_Num734.wav"></audio>
+      <div class="groupname"><h3 align="left">Original</h3></div>
+      <audio preload="auto" controls="controls" src="./WLAN/ref_Num012.wav"></audio>
+      <div style="width:10px;"></div>
+      <audio preload="auto" controls="controls" src="./WLAN/ref_Num016.wav"></audio>
+    </div>
 
-
-
-<!--    <video autoplay controls muted width="1000" height="568" src="../static/3D_print.mp4" style="position: center;margin: 0px 10px 0px 10px;">-->
-
+    <div class="ShowAudio">
+      <div class="groupname"><h3 align="left">Original</h3></div>
+      <audio preload="auto" controls="controls" src="./10/ref_Num016.wav"></audio>
+      <div style="width:10px;"></div>
+      <audio preload="auto" controls="controls" src="./10/ref_Num805.wav"></audio>
+      <div class="groupname"><h3 align="left">Original</h3></div>
+      <audio preload="auto" controls="controls" src="./30/ref_Num097.wav"></audio>
+      <div style="width:10px;"></div>
+      <audio preload="auto" controls="controls" src="./30/ref_Num734.wav"></audio>
+      <div class="groupname"><h3 align="left">Original</h3></div>
+      <audio preload="auto" controls="controls" src="./WLAN/ref_Num012.wav"></audio>
+      <div style="width:10px;"></div>
+      <audio preload="auto" controls="controls" src="./WLAN/ref_Num016.wav"></audio>
+    </div>
   </div>
 </div>
 <!--网页盒子结束-->
@@ -215,6 +232,18 @@ a {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   padding-bottom: 50px;
+}
+.ShowAudio {
+    width: auto;
+    margin: 10px auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.groupname {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 206px;
 }
 </style>
 <script>
